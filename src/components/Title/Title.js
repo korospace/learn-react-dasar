@@ -2,10 +2,13 @@
  * Function Component
  */
 
+// Styling
+import './css-title.css'
+
 function Title(props) {
   return (
-    <div>
-        <h2>{props.data}</h2>
+    <div className='title-wraper'>
+      <h2>{props.data}</h2>
     </div>
   );
 }

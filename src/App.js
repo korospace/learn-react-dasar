@@ -1,17 +1,17 @@
-// css
-import './App.css';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+
 // component
-import Title       from './components/Title'
-import Description from './components/Description';
+import Home  from './pages/Home';
+import Movie from './pages/Movie/Movie';
 
 function App() {
   return (
-    <div>
-      <Title data="title A" />
-      <Description data="desc 1" />
-      <Title data="title B" />
-      <Description data="desc 2" />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/'      element={<Home />} />
+        <Route path='/movie' element={<Movie />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

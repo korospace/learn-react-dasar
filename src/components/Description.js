@@ -16,9 +16,7 @@ class Description extends React.Component
 
     render() {
         return (
-            <div>
-                <p>{ this.state.data }</p>
-            </div>
+            <p>{ this.state.data }</p>
         )
     }
 }
